@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #282B32;
+    --scond: #282B32;
+    --background: #FC4B2C;
+
+}
+/* ############### Home page ################### */
+.containner{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 40px;
+    align-items: center;
+}
+.containner .link-group ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.containner .link-group ul li{
+    list-style:none;
+    
+   
+
+}
+
+.containner .link-group ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--primary);
+
+}
+
+.containner .link-group ul li a.Sign-Up{
+    /* background-color: var(--background); */
+    border-radius: 30px;
+
+}
+
+.containner .logo{
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+
+.containner .link-group .hamburger{
+    display: none;
+    margin-right: 1rem;
+}
+
+
+/* ############### media qury ################ */
+@media only screen and (max-width: 960px){
+    .containner .link-group ul {
+        display: none;  
+    }
+    .containner .link-group .hamburger{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .d-flex{
+        display: flex !important;
+    }
+
+}
