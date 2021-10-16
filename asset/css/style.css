@@ -70,23 +70,3 @@
         display: flex !important;
     }
 }
-
-
-.container .link-group ul li  ::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 0.275rem;
-    background: #FC4B2C;
-    left: 0;
-    top: 0;
-
-}
-
-.container .link-group::after {
-    transform: scale(0,1);
-}
-
-.container .link-group ul li :hover::after{
-    transform: scale(1,1);
-} 
