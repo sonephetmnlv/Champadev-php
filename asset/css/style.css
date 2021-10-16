@@ -21,6 +21,7 @@
     margin: 0 auto;
     height: 40px;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .container .link-group ul {
@@ -39,9 +40,14 @@
     color: var(--primary);
 }
 
-.containner .link-group ul li a.Sign-Up {
-    /* background-color: var(--background); */
+.container .link-group ul li:hover a {
+    border-top: 3px solid var(--background);
+}
+
+.container .link-group ul li a.signUp {
     border-radius: 30px;
+    background-color: var(--background);
+    box-shadow: 2px 2px 0px 1px #cc2103;
 }
 
 .container .logo {
@@ -55,7 +61,7 @@
 }
 
 
-/* ############### media qury ################ */
+/* ############### media query ################ */
 
 @media only screen and (max-width: 960px) {
     .container .link-group ul {
