@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $_SESSION['auth'] ='';
     
     if($_SESSION['auth'] == ''){
         header('location:login.php');

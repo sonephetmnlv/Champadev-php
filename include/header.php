@@ -1,3 +1,6 @@
+<?php 
+    require_once 'include/server.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
