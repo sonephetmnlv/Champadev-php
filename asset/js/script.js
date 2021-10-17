@@ -19,13 +19,39 @@
 
     window.onscroll = function() { myFunction() };
 
-    var navbar = document.getElementById("nav-bar");
-    var sticky = navbar.offsetTop;
+
 
     function myFunction() {
+        var navbar = document.getElementById("nav-bar");
+        var sticky = navbar.offsetTop;
+
         if (window.pageYOffset > sticky) {
             navbar.classList.add("nav-bar")
         } else {
             navbar.classList.remove("nav-bar");
         }
+    }
+
+
+
+    // function  on click login page
+
+
+    var box_login = document.getElementById('box-login');
+    var box_register = document.getElementById('box-register');
+    var btn_login = document.getElementById('btn-login');
+    var btn_register = document.getElementById('btn-register');
+
+    function login() {
+        btn_login.classList.add('active');
+        btn_register.classList.remove('active');
+        box_login.classList.remove('flex-none');
+        box_register.classList.add('flex-none');
+    }
+
+    function register() {
+        btn_login.classList.remove('active');
+        btn_register.classList.add('active');
+        box_login.classList.add('flex-none');
+        box_register.classList.remove('flex-none');
     }
